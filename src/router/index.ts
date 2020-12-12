@@ -7,6 +7,8 @@ import store from "../store";
 // Reduces initial load time for the website by loading pages as-needed
 // Code is sent to the browser in named webpack chunks (example: home.[hash].js)
 const Home = () => import(/* webpackChunkName: "home" */ "../views/Home.vue");
+const Sponsors = () =>
+  import(/* webpackChunkName: "Sponsors" */ "../views/Sponsors.vue");
 const About = () =>
   import(/* webpackChunkName: "about" */ "../views/About.vue");
 const Error = () =>
@@ -31,6 +33,11 @@ const routes: Array<RouteConfig> = [
     path: "/error",
     name: "Error",
     component: Error
+  },
+  {
+    path: "/sponsors",
+    name: "Sponsors",
+    component: Sponsors
   },
 
   // This route will match anything which isn't matched above
