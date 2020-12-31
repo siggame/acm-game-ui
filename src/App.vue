@@ -3,7 +3,9 @@
     <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link> |
-      <router-link to="/Sponsors">Sponsors</router-link>
+      <router-link to="/Sponsors">Sponsors</router-link> |
+      <router-link to="/HallofFame">Hall of Fame</router-link> |
+      <router-link to="/Blogs">Blogs</router-link>
     </div>
     <LoadIcon v-if="isLoading" />
     <router-view />

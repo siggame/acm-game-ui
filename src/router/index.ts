@@ -11,6 +11,10 @@ const Sponsors = () =>
   import(/* webpackChunkName: "Sponsors" */ "../views/Sponsors.vue");
 const About = () =>
   import(/* webpackChunkName: "about" */ "../views/About.vue");
+const HallofFame = () =>
+  import(/* webpackChunkName: "HallofFame" */ "../views/HallofFame.vue");
+const Blogs = () =>
+  import(/* webpackChunkName: "Blogs" */ "../views/Blogs.vue");
 const Error = () =>
   import(/* webpackChunkName: "error" */ "../views/Error.vue");
 
@@ -39,7 +43,16 @@ const routes: Array<RouteConfig> = [
     name: "Sponsors",
     component: Sponsors
   },
-
+  {
+    path: "/HallofFame",
+    name: "HallofFame",
+    component: HallofFame
+  },
+  {
+    path: "/Blogs",
+    name: "Blogs",
+    component: Blogs
+  },
   // This route will match anything which isn't matched above
   {
     path: "*",
