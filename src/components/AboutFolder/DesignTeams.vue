@@ -1,7 +1,12 @@
 <template>
   <div class="card-deck">
     <div class="card border-primary mb-4" style="max-width: 22rem;">
-      <img src="/assets/logo.png" class="card-img-top" alt="..." />
+      <img
+        src="../../assets/web.png"
+        class="card-img-top"
+        alt="..."
+        style="width:100"
+      />
       <div class="card-body">
         <h5 class="card-title">Web Team</h5>
         <p class="card-text">
@@ -21,7 +26,12 @@
       </div>
     </div>
     <div class="card border-danger mb-4" style="max-width: 22rem;">
-      <img src="/assets/logo.png" class="card-img-top" alt="..." />
+      <img
+        src="../../assets/server.png"
+        class="card-img-top"
+        alt="..."
+        style="width:100"
+      />
       <div class="card-body">
         <h5 class="card-title">Game Team</h5>
         <p class="card-text">
@@ -40,7 +50,12 @@
       </div>
     </div>
     <div class="card border-success mb-4" style="max-width: 22rem;">
-      <img src="/assets/logo.png" class="card-img-top" alt="..." />
+      <img
+        src="../../assets/arena.png"
+        class="card-img-top"
+        alt="..."
+        style="width:100"
+      />
       <div class="card-body">
         <h5 class="card-title">Arena</h5>
         <p class="card-text">

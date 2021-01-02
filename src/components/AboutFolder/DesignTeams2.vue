@@ -1,7 +1,7 @@
 <template>
   <div class="card-deck">
     <div class="card border-warning mb-4" style="max-width: 22rem;">
-      <img src="/assets/logo.png" class="card-img-top" alt="..." />
+      <img src="../../assets/publicity.png" class="card-img-top" alt="..." />
       <div class="card-body">
         <h5 class="card-title">PR Team</h5>
         <p class="card-text">
@@ -20,7 +20,7 @@
       </div>
     </div>
     <div class="card border-info mb-4" style="max-width: 22rem;">
-      <img src="/assets/logo.png" class="card-img-top" alt="..." />
+      <img src="../../assets/visualizer.png" class="card-img-top" alt="..." />
       <div class="card-body">
         <h5 class="card-title">Visualizer</h5>
         <p class="card-text">
@@ -40,7 +40,7 @@
       </div>
     </div>
     <div class="card border-dark mb-4" style="max-width: 22rem;">
-      <img src="/assets/logo.png" class="card-img-top" alt="..." />
+      <img src="../../assets/ai.png" class="card-img-top" alt="..." />
       <div class="card-body">
         <h5 class="card-title">Administrative</h5>
         <p class="card-text">
