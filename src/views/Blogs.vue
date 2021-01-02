@@ -15,4 +15,4 @@ export default Vue.extend({
 });
 </script>
 
-<style></style>
+<style scoped></style>

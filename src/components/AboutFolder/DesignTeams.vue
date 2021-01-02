@@ -85,7 +85,7 @@ export default Vue.extend({
 });
 </script>
 
-<style>
+<style scoped>
 ul {
   text-align: left;
 }
