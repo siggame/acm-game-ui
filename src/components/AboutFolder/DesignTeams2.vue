@@ -1,14 +1,13 @@
 <template>
   <div class="card-deck">
-    <div class="card border-primary mb-4" style="max-width: 22rem;">
+    <div class="card border-warning mb-4" style="max-width: 22rem;">
       <img src="/assets/logo.png" class="card-img-top" alt="..." />
       <div class="card-body">
-        <h5 class="card-title">Web Team</h5>
+        <h5 class="card-title">PR Team</h5>
         <p class="card-text">
-          This group runs the main website (like the one you are on now) as well
-          as the MMAI one. They are responsible for designing the website,
-          programming it, upkeeping the website, etc. This team gets expirence
-          in:
+          This group is repsonsible for making sure people know about ACM-Game.
+          They also work with sponsors, create advertisments, and more. This
+          group gets expirence in:
         </p>
         <ul>
           <li>[thing]</li>
@@ -20,14 +19,15 @@
         <small class="text-muted">Lead by: [name]</small>
       </div>
     </div>
-    <div class="card border-danger mb-4" style="max-width: 22rem;">
+    <div class="card border-info mb-4" style="max-width: 22rem;">
       <img src="/assets/logo.png" class="card-img-top" alt="..." />
       <div class="card-body">
-        <h5 class="card-title">Game Team</h5>
+        <h5 class="card-title">Visualizer</h5>
         <p class="card-text">
-          This group makes the actual game to be played. They are responsible
-          for designing the game, programming it, and making the
-          rules/documentation for the game. This team gets expierence in:
+          This group is responsible for making the actual engine for the game
+          (the thing that the player would see). Making the art for the game as
+          well as the engine work are normally their tasks. This group gets
+          expirence in:
         </p>
         <ul>
           <li>[thing]</li>
@@ -39,14 +39,14 @@
         <small class="text-muted">Lead by: [name]</small>
       </div>
     </div>
-    <div class="card border-success mb-4" style="max-width: 22rem;">
+    <div class="card border-dark mb-4" style="max-width: 22rem;">
       <img src="/assets/logo.png" class="card-img-top" alt="..." />
       <div class="card-body">
-        <h5 class="card-title">Arena</h5>
+        <h5 class="card-title">Administrative</h5>
         <p class="card-text">
-          This group is how MMAI happens. It is responsible for holding the
-          actual competition and putting competitors against each other. This
-          team gets expierence in:
+          This group is what makes the kogs turn in the machine every year. They
+          make sure everything is schuduled, every team is doing their job, etc.
+          This group gets expirence in:
         </p>
         <ul>
           <li>[thing]</li>
@@ -66,7 +66,7 @@
 import Vue from "vue";
 
 export default Vue.extend({
-  name: "DesignTeams"
+  name: "DesignTeams2"
 });
 </script>
 
