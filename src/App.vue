@@ -9,6 +9,7 @@
     </div>
     <LoadIcon v-if="isLoading" />
     <router-view />
+    <Footer />
   </div>
 </template>
 
@@ -17,11 +18,13 @@ import Vue from "vue";
 import { mapState } from "vuex";
 import { State } from "./store";
 import LoadIcon from "./components/LoadIcon.vue";
+import Footer from "./components/Footer.vue";
 
 export default Vue.extend({
   name: "App",
   components: {
-    LoadIcon
+    LoadIcon,
+    Footer
   },
   computed: {
     ...mapState<State>({
