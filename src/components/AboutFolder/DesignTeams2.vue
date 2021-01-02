@@ -1,5 +1,5 @@
 <template>
-  <div class="card-deck">
+  <div class="card-deck" style="padding:20px">
     <div class="card border-warning mb-4" style="max-width: 22rem;">
       <img src="../../assets/publicity.png" class="card-img-top" alt="..." />
       <div class="card-body">

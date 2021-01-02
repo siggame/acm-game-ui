@@ -1,6 +1,7 @@
 <template>
-  <div class="card-deck">
-    <div class="card border-primary mb-4" style="max-width: 22rem;">
+  <div class="card-deck" style="padding:20px">
+    <!-- padding to shrink images? (on the class thing) -->
+    <div class="card border-primary mb-4" style="max-width: 22rem">
       <img
         src="../../assets/web.png"
         class="card-img-top"
