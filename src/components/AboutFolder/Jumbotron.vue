@@ -1,16 +1,17 @@
 <template>
-  <div class="jumbotron">
-    <h1 class="display-4">Hello, world!</h1>
+  <div
+    class="jumbotron bg-cover"
+    style="background-image: linear-gradient(to bottom, rgba(255,255,255,0.6) 0%,rgba(255,255,255,0.9) 100%), url(https://placeimg.com/1000/480/nature)"
+  >
+    <h1 class="display-4">ACM-GAME</h1>
     <p class="lead">
-      This is a simple hero unit, a simple jumbotron-style component for calling
-      extra attention to featured content or information.
+      We Code the Game.
     </p>
     <hr class="my-4" />
     <p>
-      It uses utility classes for typography and spacing to space content out
-      within the larger container.
+      You Code the Player.
     </p>
-    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+    <!---<a class="btn btn-primary btn-lg" href="https://www.google.com" role="button">Learn more</a>--->
   </div>
 </template>
 
