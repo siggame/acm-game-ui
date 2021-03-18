@@ -1,5 +1,5 @@
 <template>
-  <div id="sponsor-block">
+  <div class="sponsor-block">
     <div class="block-side logo-side">
       <img
         class="sponsor-logo"
@@ -7,6 +7,7 @@
         :src="getLogoUrl()"
       >
     </div>
+
     <div class="block-side info-side">
       <h1>{{ name }}</h1>
       <p>{{ info }}</p>
@@ -42,10 +43,9 @@ export default Vue.extend({
 </script>
 
 <style scoped>
-#sponsor-block {
+.sponsor-block {
   display: flex;
-  background-color: lightgreen;
-  height: 350px;
+  height: 200px;
   margin: 10px;
 }
 
@@ -55,16 +55,16 @@ export default Vue.extend({
 }
 
 .logo-side {
-  width: 25%;
+  width: 50%;
 }
 
 .info-side {
-  width: 75%;
+  width: 50%;
 }
 
 .sponsor-logo {
   max-width: 100%;
-  max-height: 350px;
+  max-height: 100%;
   position: relative;
   top: 50%;
   transform: translateY(-50%);

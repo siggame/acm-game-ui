@@ -1,13 +1,29 @@
 <template>
   <div id="sponsor-page">
-    <div class="sponsor-thanks">
-      <h1>Our Sponsors</h1>
-      <p>We really appreciate our sponsors.</p>
-    </div>
+    <div class="sponsor-paragraphs">
+      <div class="sponsor-thanks">
+        <h1>Our Sponsors</h1>
 
-    <div class="support-info">
-      <h1>How to Support Us</h1>
-      <p>Sponsor packet download, donate button</p>
+        <p>
+          We are always very thankful for our sponsors.
+          MegaMinerAI would not be possible without them.
+          Their generous donations help us host our competitions
+          as well as develop our games and framework.
+        </p>
+
+        <p><em>From all of us, <strong>thank you</strong>!</em></p>
+      </div>
+
+      <div class="support-info">
+        <h1>How to Support Us</h1>
+        <p>
+          If your company is interested in reaching out to our members
+          and other MegaMinerAI participants,
+          please feel free to download our Sponsor Packet below.
+          If you are simply interested in contributing,
+          we have a donation link, which is also below.
+        </p>
+      </div>
     </div>
 
     <TheButton
@@ -47,18 +63,21 @@ export default Vue.extend({
   data() {
     return {
       sponsors: [
-        { name: 'Garmin', logo: 'garmin.jpg', info: 'We are awesome!' },
+        { name: 'Garmin', logo: 'garmin.jpg', info: 'To be an enduring company by creating superior products for automotive, aviation, marine, outdoor, and sports that are an essential part of our customers’ lives. ' },
         { name: 'Farmin', logo: 'logo.png', info: 'This company rocks!' },
         { name: 'Charmin', logo: 'logo.png', info: 'Woah!!!!!' },
-        { name: 'Sabharwhal', logo: 'logo.png', info: 'WOOWOOWOWOWO' },
       ],
     };
   },
   methods: {
     downloadSponsorPacket() {
+      // temp alert
+      // eslint-disable-next-line no-alert
       alert('TODO: download');
     },
     redirectDonate() {
+      // temp alert
+      // eslint-disable-next-line no-alert
       alert('DONATE');
     },
   },
@@ -74,6 +93,11 @@ export default Vue.extend({
   margin: 20px;
 }
 
+.sponsor-paragraphs {
+  width: 50%;
+  margin: auto;
+}
+
 .sponsor-thanks {
 
 }
@@ -83,6 +107,8 @@ export default Vue.extend({
 }
 
 .sponsor-list {
-
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
 }
 </style>
