@@ -5,7 +5,10 @@
         Home
       </router-link> |
       <router-link to="/about">
-        About
+        About |
+      </router-link>
+      <router-link to="/blog">
+        Blog
       </router-link>
     </div>
     <LoadIcon v-if="isLoading" />
