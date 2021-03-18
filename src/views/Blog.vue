@@ -68,7 +68,10 @@ export default Vue.extend({
     filteredBlogs(): Array<any> {
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
       return this.blogs.filter((blog: any) => {
-        if (!(blog.title.includes(this.filter.text) || blog.author.includes(this.filter.text))) {
+        if (
+          !(blog.title.toLowerCase().includes(this.filter.text)
+            || blog.author.toLowerCase().includes(this.filter.text))
+        ) {
           return false;
         }
 
