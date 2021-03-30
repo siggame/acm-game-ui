@@ -12,11 +12,11 @@
       </tr>
       <tr>
         <th>Drew Brissette - Chair</th>
-        <th><a href="mailto:adb5cw@mst.edu">adb5cw@mst.edu</a></th>
+        <th><a href="mailto:adb5cw@umsystem.edu">adb5cw@umsystem.edu</a></th>
       </tr>
       <tr>
         <th>Jonathan Henderson - Vice Chair</th>
-        <th><a href="mailto:jkhd67@mst.edu">jkhd67@mst.edu</a></th>
+        <th><a href="mailto:jkhd67@umsystem.edu">jkhd67@umsystem.edu</a></th>
       </tr>
     </table>
 
@@ -31,36 +31,25 @@
       <tr>
         <th>Dr. Angel Morales</th>
         <th>Faculty Advisor</th>
-        <th><a href="mailto:ricardom@mst.edu">ricardom@mst.edu</a></th>
+        <th><a href="mailto:ricardom@umsystem.edu">ricardom@umsystem.edu</a></th>
       </tr>
       <tr>
         <th>Drew Brissette</th>
         <th>Chair</th>
-        <th><a href="mailto:jkhd67@mst.edu">jkhd67@mst.edu</a></th>
+        <th><a href="mailto:adb5cw@umsystem.edu">adb5cw@umsystem.edu</a></th>
       </tr>
       <tr>
         <th>Jonathan Henderson</th>
-        <th>Vice-Chair</th>
-        <th><a href="mailto:adb5cw@mst.edu">adb5cw@mst.edu</a></th>
-      </tr>
-      <tr>
-        <th>[Get Arena name LEAD]</th>
-        <th>Arena Lead</th>
-        <th>
-          <a
-            href="https://www.google.com"
-            target="_blank"
-          >[Get email]</a>
-        </th>
+        <th>Vice-Chair & Arena Lead</th>
+        <th><a href="mailto:jkhd67@umsystem.edu">jkhd67@umsystem.edu</a></th>
       </tr>
       <tr>
         <th>Matt Barton</th>
         <th>Game Lead</th>
         <th>
           <a
-            href="https://www.google.com"
-            target="_blank"
-          >[Get email]</a>
+            href="mailto:mbzzd@umsystem.edu"
+          >mbzzd@umsystem.edu</a>
         </th>
       </tr>
       <tr>
@@ -68,9 +57,8 @@
         <th>PR Lead</th>
         <th>
           <a
-            href="https://www.google.com"
-            target="_blank"
-          >[Get email]</a>
+            href="mailto:bnfghq@umsystem.edu"
+          >bnfghq@umsystem.edu</a>
         </th>
       </tr>
       <tr>
@@ -78,20 +66,19 @@
         <th>Secretary</th>
         <th>
           <a
-            href="https://www.google.com"
-            target="_blank"
-          >[Get email]</a>
+            href="jbsxqg@umsystem.edu"
+          >jbsxqg@umsystem.edu</a>
         </th>
       </tr>
       <tr>
         <th>Leo Flaker</th>
         <th>Vis Lead 1</th>
-        <th><a href="mailto:lafcz3@mst.edu">lafcz3@mst.edu</a></th>
+        <th><a href="mailto:lafcz3@umsystem.edu">lafcz3@umsystem.edu</a></th>
       </tr>
       <tr>
         <th>Anthony Truong</th>
         <th>Vis Lead 2</th>
-        <th><a href="mailto:atrm3@mst.edu">atrm3@mst.edu</a></th>
+        <th><a href="mailto:atrm3@umsystem.edu">atrm3@umsystem.edu</a></th>
       </tr>
       <tr>
         <th>Nicholas Latinette</th>

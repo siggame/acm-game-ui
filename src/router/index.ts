@@ -9,6 +9,7 @@ import { beforeGuard, afterGuard } from './guards';
 const Home = () => import(/* webpackChunkName: "home" */ '../views/Home.vue');
 const About = () => import(/* webpackChunkName: "about" */ '../views/About.vue');
 const Error = () => import(/* webpackChunkName: "error" */ '../views/Error.vue');
+const HallOfFame = () => import(/* webpackChunkName: "hall-of-fame" */ '../views/HallOfFame.vue');
 
 // Apply a VueRouter to our Vue instance
 Vue.use(VueRouter);
@@ -19,6 +20,11 @@ const routes: Array<RouteConfig> = [
     path: '/',
     name: 'Home',
     component: Home,
+  },
+  {
+    path: '/hall-of-fame',
+    name: 'HallOfFame',
+    component: HallOfFame,
   },
   {
     path: '/about',

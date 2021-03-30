@@ -6,6 +6,9 @@
       </router-link> |
       <router-link to="/about">
         About
+      </router-link> |
+      <router-link to="/hall-of-fame">
+        Hall Of Fame
       </router-link>
     </div>
     <LoadIcon v-if="isLoading" />
