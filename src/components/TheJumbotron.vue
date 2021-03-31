@@ -22,7 +22,7 @@ export default Vue.extend({
 
 <style scoped>
     .jumbotron-gif {
-        height: 100%;
+        height: 300px;
         width: 100%;
     }
 </style>
