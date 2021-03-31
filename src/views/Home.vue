@@ -18,17 +18,20 @@
         <TheJumbotron />
       </div>
     </div>
+    <RecentNews />
   </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue';
 import TheJumbotron from '@/components/TheJumbotron.vue'; // @ is an alias to /src
+import RecentNews from '@/components/RecentNews.vue';
 
 export default Vue.extend({
   name: 'Home',
   components: {
     TheJumbotron,
+    RecentNews,
   },
 
   methods: {
