@@ -1,9 +1,19 @@
 <template>
   <div class="design-teams">
-    <p>{{ photo }}</p>
-    <p>{{ teamname }}</p>
-    <p>{{ description }}</p>
-    <p>{{ lead }}</p>
+    <div class="solid">
+      <img
+        :src="getImgUrl()"
+        style="width: 150px; float: left; margin: 20px 12px 12px 14px;"
+      >
+      <h2>{{ teamname }}</h2>
+      <p>{{ description }}</p>
+      <ul style="margin-left=100px;">
+        <li>{{ trait1 }}</li>
+        <li>{{ trait2 }}</li>
+        <li>{{ trait3 }}</li>
+      </ul>
+      <p>{{ lead }}</p>
+    </div>
   </div>
 </template>
 
@@ -29,6 +39,33 @@ export default Vue.extend({
       type: String,
       required: true,
     },
+    trait1: {
+      type: String,
+      required: true,
+    },
+    trait2: {
+      type: String,
+      required: true,
+    },
+    trait3: {
+      type: String,
+      required: true,
+    },
+  },
+  methods: {
+    getImgUrl() {
+      return require(`@/assets/about/${this.photo}`);
+    },
   },
 });
 </script>
+
+<style scoped>
+div.solid {
+  border-style: solid;
+  width: 70%;
+  height: 250px;
+  background-color: pink;
+  margin-left: 15%;
+}
+</style>

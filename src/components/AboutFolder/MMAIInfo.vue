@@ -7,7 +7,7 @@
     <p style="text-align: left; padding: 7px;">
       <img
         style="float: right; margin: 0px 0px 20px 20px;"
-        src="../../assets/mmaiphoto.jpg"
+        src="../../assets/about/mmaiphoto.jpg"
         width="320"
       >
       MegaMinerAI is a 24-hour artificial intelligence (AI) programming
