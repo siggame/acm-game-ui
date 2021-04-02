@@ -22,7 +22,7 @@
 <script lang="ts">
 import Vue from 'vue';
 import Contactinfo from '@/components/AboutFolder/Contactinfo.vue';
-import MMAIInfo from '@/components/AboutFolder/MMAIinfo.vue';
+import MMAIInfo from '@/components/AboutFolder/MMAIInfo.vue';
 import OpenSourceLinks from '@/components/AboutFolder/OpenSourceLinks.vue';
 import DesignTeams from '@/components/AboutFolder/DesignTeams.vue';
 import DesignTeams2 from '@/components/AboutFolder/DesignTeams2.vue';

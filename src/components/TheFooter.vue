@@ -1,6 +1,6 @@
 <template>
   <div id="the-footer">
-    <h2> John is mean </h2>
+    <h2> Jon is mean </h2>
   </div>
 </template>
 

@@ -25,15 +25,15 @@ export default Vue.extend({
       people: [
         {
           name: 'Jacob Fischer',
-          photo: 'whatever',
+          photo: 'realnick.png',
           contribution: 'Creer',
           link: 'google.com',
         },
         {
           name: 'Blakob Fisher',
-          photo: 'oooo',
+          photo: 'realnick.png',
           contribution: 'Creer2',
-          link: 'google.com/google',
+          link: 'https://www.google.com',
         },
       ],
     };
