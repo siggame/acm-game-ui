@@ -12,7 +12,7 @@
         <li>{{ trait2 }}</li>
         <li>{{ trait3 }}</li>
       </ul>
-      <p>{{ lead }}</p>
+      <h4>{{ lead }}</h4>
     </div>
   </div>
 </template>

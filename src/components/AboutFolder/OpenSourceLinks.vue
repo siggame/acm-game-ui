@@ -1,7 +1,7 @@
 <template>
   <div id="open-source-links">
     <h2>We are Open Source!</h2>
-    <table>
+    <table class="css-table">
       <tr>
         <th>Game</th>
         <th>Github Repo</th>

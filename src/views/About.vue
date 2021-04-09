@@ -15,8 +15,14 @@
       :trait2="team.trait2"
       :trait3="team.trait3"
     />
-    <OpenSourceLinks />
-    <Contactinfo />
+    <div class="flex-container">
+      <OpenSourceLinks />
+    </div>
+    <ul class="flex-container">
+      <li class="flex-item">
+        <Contactinfo />
+      </li>
+    </ul>
   </div>
 </template>
 
@@ -95,4 +101,17 @@ export default Vue.extend({
 h2 {
   text-align: left;
 }
+li {
+  list-style: none;
+}
+.flex-container {
+  display: flex;
+
+  flex-flow: row wrap;
+  justify-content: center;
+
+  padding: 0;
+  margin: 0;
+}
+
 </style>

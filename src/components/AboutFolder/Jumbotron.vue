@@ -7,14 +7,13 @@
     <h1 class="display-4">
       ACM-GAME
     </h1>
-    <p class="lead">
+    <h3 class="lead">
       We Code the Game.
-    </p>
+    </h3>
     <hr class="my-4">
-    <p>
+    <h5>
       You Code the Player.
-    </p>
-    <!---<a class="btn btn-primary btn-lg" href="https://www.google.com" role="button">Learn more</a>--->
+    </h5>
   </div>
 </template>
 
