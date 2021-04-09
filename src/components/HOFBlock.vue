@@ -3,9 +3,9 @@
     <div class="solid">
       <img
         :src="getImgUrl()"
-        style="float: left; margin 0px 12px 12px 0px;"
+        style="float: left; margin 0px 12px 12px 0px; width: 280px; height: 213px; padding: 5px"
       >
-      <div>
+      <div style="padding: 20px;">
         <h5>{{ name }}</h5>
         <p>{{ contribution }} </p>
         <p> {{ name }} </p>
