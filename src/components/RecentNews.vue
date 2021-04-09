@@ -5,7 +5,7 @@
       <div class="left-side">
         <img
           src="image"
-          alt=""
+          alt="IMAGE GOES HERE"
         >
       </div>
       <div class="right-side">
@@ -41,6 +41,7 @@ export default Vue.extend({
     .recent-news h1 {
         text-align-last: left;
         padding: 25px;
+        margin: 0px;
     }
 
     .news-body {
@@ -51,6 +52,11 @@ export default Vue.extend({
         flex: 25%;
     }
 
+    .left-side img {
+        height: 200px;
+        width: 200px;
+        background-color: lightblue;
+    }
     .right-side {
         flex: 75%;
         text-align: left;
