@@ -9,6 +9,10 @@
       </router-link> |
       <router-link to="/sponsor">
         Sponsor
+        About |
+      </router-link>
+      <router-link to="/blog">
+        Blog
       </router-link>
     </div>
     <LoadIcon v-if="isLoading" />

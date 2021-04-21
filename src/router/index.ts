@@ -9,6 +9,7 @@ import { beforeGuard, afterGuard } from './guards';
 const Home = () => import(/* webpackChunkName: "home" */ '../views/Home.vue');
 const About = () => import(/* webpackChunkName: "about" */ '../views/About.vue');
 const Sponsor = () => import(/* webpackChunkName: "sponsor" */ '../views/Sponsor.vue');
+const Blog = () => import(/* webpackChunkName: "blog" */ '../views/Blog.vue');
 const Error = () => import(/* webpackChunkName: "error" */ '../views/Error.vue');
 
 // Apply a VueRouter to our Vue instance
@@ -35,6 +36,11 @@ const routes: Array<RouteConfig> = [
     path: '/error',
     name: 'Error',
     component: Error,
+  },
+  {
+    path: '/blog',
+    name: 'Blog',
+    component: Blog,
   },
 
   // This route will match anything which isn't matched above
