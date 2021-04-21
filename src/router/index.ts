@@ -8,6 +8,7 @@ import { beforeGuard, afterGuard } from './guards';
 // Code is sent to the browser in named webpack chunks (example: home.[hash].js)
 const Home = () => import(/* webpackChunkName: "home" */ '../views/Home.vue');
 const About = () => import(/* webpackChunkName: "about" */ '../views/About.vue');
+const Blog = () => import(/* webpackChunkName: "blog" */ '../views/Blog.vue');
 const Error = () => import(/* webpackChunkName: "error" */ '../views/Error.vue');
 
 // Apply a VueRouter to our Vue instance
@@ -29,6 +30,11 @@ const routes: Array<RouteConfig> = [
     path: '/error',
     name: 'Error',
     component: Error,
+  },
+  {
+    path: '/blog',
+    name: 'Blog',
+    component: Blog,
   },
 
   // This route will match anything which isn't matched above
