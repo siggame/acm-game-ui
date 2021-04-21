@@ -5,6 +5,10 @@
         Home
       </router-link> |
       <router-link to="/about">
+        About
+      </router-link> |
+      <router-link to="/sponsor">
+        Sponsor
         About |
       </router-link>
       <router-link to="/blog">
@@ -39,12 +43,14 @@ export default Vue.extend({
 </script>
 
 <style>
+@import './assets/styles/main.css';
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: #002f49;
 }
 
 #nav {
