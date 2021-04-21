@@ -1,5 +1,8 @@
 # acm-game-ui
 
+The ACM Game website source code.  
+Contact the Web team for more information.
+
 ## Project setup
 ```
 npm install
@@ -19,6 +22,3 @@ npm run build
 ```
 npm run lint
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
