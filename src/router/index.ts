@@ -6,11 +6,17 @@ import { beforeGuard, afterGuard } from './guards';
 // Using components as functions that import the actual component code when called
 // Reduces initial load time for the website by loading pages as-needed
 // Code is sent to the browser in named webpack chunks (example: home.[hash].js)
-const Home = () => import(/* webpackChunkName: "home" */ '../views/Home.vue');
-const About = () => import(/* webpackChunkName: "about" */ '../views/About.vue');
-const Sponsor = () => import(/* webpackChunkName: "sponsor" */ '../views/Sponsor.vue');
-const Blog = () => import(/* webpackChunkName: "blog" */ '../views/Blog.vue');
-const Error = () => import(/* webpackChunkName: "error" */ '../views/Error.vue');
+const Home = () => import(/* webpackChunkName: "home" */ "../views/Home.vue");
+const Sponsors = () =>
+  import(/* webpackChunkName: "Sponsors" */ "../views/Sponsors.vue");
+const About = () =>
+  import(/* webpackChunkName: "about" */ "../views/About.vue");
+const HallofFame = () =>
+  import(/* webpackChunkName: "HallofFame" */ "../views/HallofFame.vue");
+const Blogs = () =>
+  import(/* webpackChunkName: "Blogs" */ "../views/Blogs.vue");
+const Error = () =>
+  import(/* webpackChunkName: "error" */ "../views/Error.vue");
 
 // Apply a VueRouter to our Vue instance
 Vue.use(VueRouter);
@@ -42,7 +48,21 @@ const routes: Array<RouteConfig> = [
     name: 'Blog',
     component: Blog,
   },
-
+  {
+    path: "/sponsors",
+    name: "Sponsors",
+    component: Sponsors
+  },
+  {
+    path: "/HallofFame",
+    name: "HallofFame",
+    component: HallofFame
+  },
+  {
+    path: "/Blogs",
+    name: "Blogs",
+    component: Blogs
+  },
   // This route will match anything which isn't matched above
   {
     path: '*',

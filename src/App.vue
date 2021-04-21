@@ -14,6 +14,7 @@
       <router-link to="/blog">
         Blog
       </router-link>
+      <router-link to="/HallofFame">Hall of Fame</router-link> |
     </div>
     <LoadIcon v-if="isLoading" />
     <router-view />
