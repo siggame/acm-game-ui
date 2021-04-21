@@ -7,14 +7,16 @@
       <router-link to="/about">
         About
       </router-link> |
-      <router-link to="/sponsor">
-        Sponsor
+      <router-link to="/sponsors">
+        Sponsors
         About |
       </router-link>
       <router-link to="/blog">
         Blog
       </router-link>
-      <router-link to="/HallofFame">Hall of Fame</router-link> |
+      <router-link to="/HallofFame">
+        Hall of Fame
+      </router-link> |
     </div>
     <LoadIcon v-if="isLoading" />
     <router-view />

@@ -6,17 +6,12 @@ import { beforeGuard, afterGuard } from './guards';
 // Using components as functions that import the actual component code when called
 // Reduces initial load time for the website by loading pages as-needed
 // Code is sent to the browser in named webpack chunks (example: home.[hash].js)
-const Home = () => import(/* webpackChunkName: "home" */ "../views/Home.vue");
-const Sponsors = () =>
-  import(/* webpackChunkName: "Sponsors" */ "../views/Sponsors.vue");
-const About = () =>
-  import(/* webpackChunkName: "about" */ "../views/About.vue");
-const HallofFame = () =>
-  import(/* webpackChunkName: "HallofFame" */ "../views/HallofFame.vue");
-const Blogs = () =>
-  import(/* webpackChunkName: "Blogs" */ "../views/Blogs.vue");
-const Error = () =>
-  import(/* webpackChunkName: "error" */ "../views/Error.vue");
+const Home = () => import(/* webpackChunkName: "home" */ '../views/Home.vue');
+const Sponsors = () => import(/* webpackChunkName: "Sponsors" */ '../views/Sponsors.vue');
+const About = () => import(/* webpackChunkName: "about" */ '../views/About.vue');
+const HallofFame = () => import(/* webpackChunkName: "HallofFame" */ '../views/HallofFame.vue');
+const Blog = () => import(/* webpackChunkName: "Blog" */ '../views/Blog.vue');
+const Error = () => import(/* webpackChunkName: "error" */ '../views/Error.vue');
 
 // Apply a VueRouter to our Vue instance
 Vue.use(VueRouter);
@@ -34,9 +29,9 @@ const routes: Array<RouteConfig> = [
     component: About,
   },
   {
-    path: '/sponsor',
-    name: 'Sponsor',
-    component: Sponsor,
+    path: '/sponsors',
+    name: 'Sponsors',
+    component: Sponsors,
   },
   {
     path: '/error',
@@ -49,19 +44,19 @@ const routes: Array<RouteConfig> = [
     component: Blog,
   },
   {
-    path: "/sponsors",
-    name: "Sponsors",
-    component: Sponsors
+    path: '/sponsors',
+    name: 'Sponsors',
+    component: Sponsors,
   },
   {
-    path: "/HallofFame",
-    name: "HallofFame",
-    component: HallofFame
+    path: '/HallofFame',
+    name: 'HallofFame',
+    component: HallofFame,
   },
   {
-    path: "/Blogs",
-    name: "Blogs",
-    component: Blogs
+    path: '/Blog',
+    name: 'Blog',
+    component: Blog,
   },
   // This route will match anything which isn't matched above
   {

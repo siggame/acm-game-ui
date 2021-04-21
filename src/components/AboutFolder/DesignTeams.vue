@@ -1,15 +1,23 @@
 <template>
-  <div class="card-deck" style="padding:20px">
+  <div
+    class="card-deck"
+    style="padding:20px"
+  >
     <!-- padding to shrink images? (on the class thing) -->
-    <div class="card border-primary mb-4" style="max-width: 22rem">
+    <div
+      class="card border-primary mb-4"
+      style="max-width: 22rem"
+    >
       <img
         src="../../assets/web.png"
         class="card-img-top"
         alt="..."
         style="width:100"
-      />
+      >
       <div class="card-body">
-        <h5 class="card-title">Web Team</h5>
+        <h5 class="card-title">
+          Web Team
+        </h5>
         <p class="card-text">
           This group runs the main website (like the one you are on now) as well
           as the MMAI one. They are responsible for designing the website,
@@ -26,15 +34,20 @@
         <small class="text-muted">Lead by: [name]</small>
       </div>
     </div>
-    <div class="card border-danger mb-4" style="max-width: 22rem;">
+    <div
+      class="card border-danger mb-4"
+      style="max-width: 22rem;"
+    >
       <img
         src="../../assets/server.png"
         class="card-img-top"
         alt="..."
         style="width:100"
-      />
+      >
       <div class="card-body">
-        <h5 class="card-title">Game Team</h5>
+        <h5 class="card-title">
+          Game Team
+        </h5>
         <p class="card-text">
           This group makes the actual game to be played. They are responsible
           for designing the game, programming it, and making the
@@ -50,15 +63,20 @@
         <small class="text-muted">Lead by: [name]</small>
       </div>
     </div>
-    <div class="card border-success mb-4" style="max-width: 22rem;">
+    <div
+      class="card border-success mb-4"
+      style="max-width: 22rem;"
+    >
       <img
         src="../../assets/arena.png"
         class="card-img-top"
         alt="..."
         style="width:100"
-      />
+      >
       <div class="card-body">
-        <h5 class="card-title">Arena</h5>
+        <h5 class="card-title">
+          Arena
+        </h5>
         <p class="card-text">
           This group is how MMAI happens. It is responsible for holding the
           actual competition and putting competitors against each other. This
@@ -74,15 +92,15 @@
         <small class="text-muted">Lead by: [name]</small>
       </div>
     </div>
-    <hr />
+    <hr>
   </div>
 </template>
 
 <script lang="ts">
-import Vue from "vue";
+import Vue from 'vue';
 
 export default Vue.extend({
-  name: "DesignTeams"
+  name: 'DesignTeams',
 });
 </script>
 

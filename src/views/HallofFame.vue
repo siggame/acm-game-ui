@@ -1,17 +1,15 @@
 <template>
-  <div>
-    <HelloWorld msg="Hall Of Fame Page" />
-  </div>
+  <div />
 </template>
 
 <script lang="ts">
-import Vue from "vue";
-import HelloWorld from "@/components/HelloWorld.vue";
+import Vue from 'vue';
+
 export default Vue.extend({
-  name: "HallofFame",
+  name: 'HallofFame',
   components: {
-    HelloWorld
-  }
+
+  },
 });
 </script>
 

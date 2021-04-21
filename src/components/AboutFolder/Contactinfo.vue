@@ -20,7 +20,7 @@
       </tr>
     </table>
 
-    <hr />
+    <hr>
     <h2>Officers and Leads</h2>
     <table>
       <tr>
@@ -47,28 +47,40 @@
         <th>[Get Arena name LEAD]</th>
         <th>Arena Lead</th>
         <th>
-          <a href="https://www.google.com" target="_blank">[Get email]</a>
+          <a
+            href="https://www.google.com"
+            target="_blank"
+          >[Get email]</a>
         </th>
       </tr>
       <tr>
         <th>Matt Barton</th>
         <th>Game Lead</th>
         <th>
-          <a href="https://www.google.com" target="_blank">[Get email]</a>
+          <a
+            href="https://www.google.com"
+            target="_blank"
+          >[Get email]</a>
         </th>
       </tr>
       <tr>
         <th>Bryce Foster</th>
         <th>PR Lead</th>
         <th>
-          <a href="https://www.google.com" target="_blank">[Get email]</a>
+          <a
+            href="https://www.google.com"
+            target="_blank"
+          >[Get email]</a>
         </th>
       </tr>
       <tr>
         <th>Jordan Styer</th>
         <th>Secretary</th>
         <th>
-          <a href="https://www.google.com" target="_blank">[Get email]</a>
+          <a
+            href="https://www.google.com"
+            target="_blank"
+          >[Get email]</a>
         </th>
       </tr>
       <tr>
@@ -91,10 +103,10 @@
 </template>
 
 <script lang="ts">
-import Vue from "vue";
+import Vue from 'vue';
 
 export default Vue.extend({
-  name: "Contactinfo"
+  name: 'Contactinfo',
 });
 </script>
 
