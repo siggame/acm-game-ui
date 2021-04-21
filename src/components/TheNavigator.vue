@@ -1,27 +1,60 @@
 <template>
   <div
     id="the-navigator"
-    class="bg-gray-300"
+    class="bg-gray-200"
   >
-    <div
-      v-for="route of routes"
-      :key="route.name"
-      class="nav-button"
+    <div class="nav-section nav-side">
+      <router-link to="/">
+        <img
+          :src="getImg('wrench-light.svg')"
+          class="nav-icon"
+        >
+        <p class="icon-text gray-600">
+          ACM Game
+        </p>
+      </router-link>
+    </div>
 
-      :class="{ 'bg-gray-200' : !route.hovered, 'nav-current': route.uri === $route.path }"
-      @mouseover="route.hovered = true"
-      @mouseout="route.hovered = false"
-      @click="$router.push({ name: route.name })"
+    <div class="nav-section">
+      <router-link
+        v-for="route of routes"
+        :key="route.name"
+        :to="route.uri"
+        class="nav-button"
+
+        :class="{ 'bg-gray-100' : route.hovered }"
+        @mouseover.native="route.hovered = true"
+        @mouseout.native="route.hovered = false"
+      >
+        <p class="gray-600 button-text">
+          {{ route.name }}
+        </p>
+      </router-link>
+    </div>
+
+    <div
+      class="nav-section nav-side"
+      style="display: flex; justify-content: right;"
     >
-      <p class="blue-500">
-        {{ route.name }}
-      </p>
+      <router-link
+        to="/"
+        class="portal-side bg-blue-400"
+      >
+        <p class="portal-text gray-600">
+          MegaMinerAI Portal
+        </p>
+        <img
+          :src="getImg('arrow-right.svg')"
+          class="portal-icon"
+        >
+      </router-link>
     </div>
   </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue';
+import { getImg } from '@/services/common';
 
 interface RouteInfo {
   name: string;
@@ -42,28 +75,73 @@ export default Vue.extend({
       ] as Array<RouteInfo>,
     };
   },
+  methods: {
+    getImg,
+  },
 });
 </script>
 
 <style>
 #the-navigator {
   height: 50px;
+  display: flex;
+  justify-content: space-around;
+  line-height: 100%;
+}
+
+#the-navigation div {
+  height: 100%;
+}
+
+.nav-section {
+  width: 60%;
+}
+
+.nav-side {
+  width: 20%;
+}
+
+.nav-icon {
+  height: 80%;
+  padding: 5px;
+  float: left;
+}
+
+.icon-text {
+  float: left;
+  margin: 0;
+  padding: 17px 5px;
 }
 
 .nav-button {
   display: inline-block;
   height: 100%;
-  width: 100px;
+  width: 120px;
+  box-sizing: border-box;
   text-decoration: none;
-  cursor: pointer;
 }
 
-.nav-button p {
-  line-height: 100%;
+.button-text {
+  margin: 0;
+  padding: 17px 0;
 }
 
-.nav-current {
-  text-decoration: underline;
-  text-underline-offset: 4px;
+.portal-side {
+  display: flex;
+  justify-content: space-evenly;
+  width: 80%;
+  text-decoration: none;
+}
+
+.portal-text {
+  margin: 0;
+  padding: 17px 5px;
+  display: inline-block;
+}
+
+.portal-icon {
+  height: 80%;
+  padding: 5px;
+  float: right;
 }
 </style>

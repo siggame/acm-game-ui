@@ -34,11 +34,6 @@ const routes: Array<RouteConfig> = [
     component: Sponsors,
   },
   {
-    path: '/sponsors',
-    name: 'Sponsors',
-    component: Sponsors,
-  },
-  {
     path: '/hall',
     name: 'Hall',
     component: Hall,
