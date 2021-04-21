@@ -7,10 +7,10 @@ import { beforeGuard, afterGuard } from './guards';
 // Reduces initial load time for the website by loading pages as-needed
 // Code is sent to the browser in named webpack chunks (example: home.[hash].js)
 const Home = () => import(/* webpackChunkName: "home" */ '../views/Home.vue');
-const Sponsors = () => import(/* webpackChunkName: "Sponsors" */ '../views/Sponsors.vue');
+const Sponsors = () => import(/* webpackChunkName: "sponsors" */ '../views/Sponsors.vue');
 const About = () => import(/* webpackChunkName: "about" */ '../views/About.vue');
-const HallofFame = () => import(/* webpackChunkName: "HallofFame" */ '../views/HallofFame.vue');
-const Blog = () => import(/* webpackChunkName: "Blog" */ '../views/Blog.vue');
+const Hall = () => import(/* webpackChunkName: "hall" */ '../views/Hall.vue');
+const Blog = () => import(/* webpackChunkName: "blog" */ '../views/Blog.vue');
 const Error = () => import(/* webpackChunkName: "error" */ '../views/Error.vue');
 
 // Apply a VueRouter to our Vue instance
@@ -34,24 +34,14 @@ const routes: Array<RouteConfig> = [
     component: Sponsors,
   },
   {
-    path: '/error',
-    name: 'Error',
-    component: Error,
-  },
-  {
-    path: '/blog',
-    name: 'Blog',
-    component: Blog,
-  },
-  {
     path: '/sponsors',
     name: 'Sponsors',
     component: Sponsors,
   },
   {
-    path: '/HallofFame',
-    name: 'HallofFame',
-    component: HallofFame,
+    path: '/hall',
+    name: 'Hall',
+    component: Hall,
   },
   {
     path: '/Blog',
