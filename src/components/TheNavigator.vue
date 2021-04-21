@@ -39,6 +39,9 @@
       <router-link
         to="/"
         class="portal-side bg-blue-400"
+        :class="{ 'bg-blue-500': portalHovered }"
+        @mouseover.native="portalHovered = true"
+        @mouseout.native="portalHovered = false"
       >
         <p class="portal-text gray-600">
           MegaMinerAI Portal
@@ -73,6 +76,7 @@ export default Vue.extend({
         { name: 'Blog', uri: '/blog', hovered: false },
         { name: 'Hall of Fame', uri: '/hall', hovered: false },
       ] as Array<RouteInfo>,
+      portalHovered: false,
     };
   },
   methods: {
