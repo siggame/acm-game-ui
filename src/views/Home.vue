@@ -5,7 +5,7 @@
         <div class="wrench-picture">
           <img
             class="wrench-svg"
-            :src="getWrenchUrl()"
+            :src="getImg(`wrench.svg`)"
           >
         </div>
         <div class="acm-text">
@@ -25,6 +25,7 @@
 
 <script lang="ts">
 import Vue from 'vue';
+import { getImg } from '@/services/common';
 import TheJumbotron from '@/components/TheJumbotron.vue'; // @ is an alias to /src
 import RecentNews from '@/components/RecentNews.vue';
 import AboutUs from '@/components/AboutUs.vue';
@@ -38,9 +39,7 @@ export default Vue.extend({
   },
 
   methods: {
-    getWrenchUrl() {
-      return require('@/assets/wrench.svg');
-    },
+    getImg,
   },
 });
 </script>

@@ -2,20 +2,19 @@
   <div class="the-jumbotron">
     <img
       class="jumbotron-gif"
-      :src="getJumbotronUrl()"
+      :src="getImg(`games.gif`)"
     >
   </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue';
+import { getImg } from '@/services/common';
 
 export default Vue.extend({
   name: 'TheJumbotron',
   methods: {
-    getJumbotronUrl() {
-      return require('@/assets/games.gif');
-    },
+    getImg,
   },
 });
 </script>

@@ -4,7 +4,7 @@
       <img
         class="sponsor-logo"
         alt="Vue logo"
-        :src="getLogoUrl()"
+        :src="getImg(`sponsors/${logo}`)"
       >
     </div>
 
@@ -17,6 +17,7 @@
 
 <script lang="ts">
 import Vue from 'vue';
+import { getImg } from '@/services/common';
 
 export default Vue.extend({
   name: 'SponsorBlock',
@@ -35,9 +36,7 @@ export default Vue.extend({
     },
   },
   methods: {
-    getLogoUrl() {
-      return require(`@/assets/sponsors/${this.logo}`);
-    },
+    getImg,
   },
 });
 </script>

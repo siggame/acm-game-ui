@@ -3,7 +3,7 @@
     <img
       class="blog-thumbnail"
       :alt="title"
-      :src="getImgUrl()"
+      :src="getImg(`blogs/${photo}`)"
     >
 
     <div class="blog-info">
@@ -17,6 +17,7 @@
 
 <script lang="ts">
 import Vue from 'vue';
+import { getImg } from '@/services/common';
 
 export default Vue.extend({
   name: 'BlogPreview',
@@ -43,9 +44,7 @@ export default Vue.extend({
     },
   },
   methods: {
-    getImgUrl() {
-      return require(`@/assets/blogs/${this.photo}`);
-    },
+    getImg,
   },
 });
 </script>
