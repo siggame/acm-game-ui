@@ -1,6 +1,39 @@
 <template>
-  <div>
-    <h2>This is the OpenSourceLinks boi</h2>
+  <div id="open-source-links">
+    <h2>We are Open Source!</h2>
+    <table class="css-table">
+      <tr>
+        <th>Game</th>
+        <th>Github Repo</th>
+      </tr>
+      <tr>
+        <th>Example</th>
+        <th>
+          <a
+            href="https://www.google.com"
+            target="_blank"
+          >githubrepo/link</a>
+        </th>
+      </tr>
+      <tr>
+        <th>Example</th>
+        <th>
+          <a
+            href="https://www.google.com"
+            target="_blank"
+          >githubrepo/link</a>
+        </th>
+      </tr>
+      <tr>
+        <th>Example</th>
+        <th>
+          <a
+            href="https://www.google.com"
+            target="_blank"
+          >githubrepo/link</a>
+        </th>
+      </tr>
+    </table>
   </div>
 </template>
 
@@ -12,4 +45,28 @@ export default Vue.extend({
 });
 </script>
 
-<style scoped></style>
+
+<style scoped>
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th,
+td {
+  padding: 15px;
+}
+th {
+  text-align: left;
+}
+table {
+  border-spacing: 5px;
+}
+table tr:nth-child(even) {
+  background-color: #eeeeee;
+}
+table tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+</style>

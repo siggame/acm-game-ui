@@ -12,6 +12,7 @@ const About = () => import(/* webpackChunkName: "about" */ '../views/About.vue')
 const Hall = () => import(/* webpackChunkName: "hall" */ '../views/Hall.vue');
 const Blog = () => import(/* webpackChunkName: "blog" */ '../views/Blog.vue');
 const Error = () => import(/* webpackChunkName: "error" */ '../views/Error.vue');
+const HallOfFame = () => import(/* webpackChunkName: "hall-of-fame" */ '../views/HallOfFame.vue');
 
 // Apply a VueRouter to our Vue instance
 Vue.use(VueRouter);
@@ -22,6 +23,11 @@ const routes: Array<RouteConfig> = [
     path: '/',
     name: 'Home',
     component: Home,
+  },
+  {
+    path: '/hall-of-fame',
+    name: 'HallOfFame',
+    component: HallOfFame,
   },
   {
     path: '/about',
