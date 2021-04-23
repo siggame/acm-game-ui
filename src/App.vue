@@ -1,16 +1,5 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">
-        Home
-      </router-link> |
-      <router-link to="/about">
-        About
-      </router-link> |
-      <router-link to="/hall-of-fame">
-        Hall Of Fame
-      </router-link>
-   
     <TheNavigator />
     <LoadIcon v-if="isLoading" />
     <router-view v-else />

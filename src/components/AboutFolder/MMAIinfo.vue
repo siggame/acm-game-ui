@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="mmai-info">
     <h2 style="padding: 5px; text-align:left;">
       MegaMinerAI Info
     </h2>
@@ -7,7 +7,7 @@
     <p style="text-align: left; padding: 7px;">
       <img
         style="float: right; margin: 0px 0px 20px 20px;"
-        src="../../assets/mmaiphoto.jpg"
+        src="../../assets/about/mmaiphoto.jpg"
         width="320"
       >
       MegaMinerAI is a 24-hour artificial intelligence (AI) programming
@@ -43,7 +43,6 @@ hr.divide {
   border-top: 2px solid #1b3e50;
   border-radius: 5px;
 }
-
 hr {
   border: 1px solid #fff;
 }

@@ -1,5 +1,4 @@
 <template>
-
   <div
     id="contact-info"
     class="flex-container"
@@ -129,6 +128,7 @@ table tr:nth-child(even) {
 }
 table tr:nth-child(odd) {
   background-color: #ffffff;
+}
 
 .flex-container {
   display: flex;
