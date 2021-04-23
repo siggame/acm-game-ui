@@ -6,7 +6,7 @@
       class="type-option"
       @click="select(type)"
     >
-      <p>
+      <p class="gray-600">
         {{ type }}
       </p>
       <hr :class="[ type === selected ? 'selected' : 'unselected' ]">
@@ -36,9 +36,7 @@ export default Vue.extend({
 
 <style scoped>
 .blog-filter {
-  width: 100%;
   display: flex;
-  height: 30px;
 }
 
 .type-option {

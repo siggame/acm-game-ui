@@ -1,6 +1,7 @@
 <template>
-  <div class="search-bar">
+  <div class="blog-search">
     <input
+      class="bg-blue-600 gray-100"
       :value="searchText"
       type="text"
       placeholder="Search..."
@@ -13,7 +14,7 @@
 import Vue from 'vue';
 
 export default Vue.extend({
-  name: 'SearchBar',
+  name: 'BlogSearch',
   data() {
     return {
       searchText: '',
@@ -31,4 +32,18 @@ export default Vue.extend({
 </script>
 
 <style scoped>
+.blog-search {
+  width: 300px;
+  height: 100%;
+}
+
+input {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding-left: 10px;
+  border-width: 0;
+  box-sizing: border-box;
+  font-size: 18px;
+}
 </style>

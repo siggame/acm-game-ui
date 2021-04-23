@@ -4,12 +4,18 @@
       <h1>ACM Game Blog</h1>
 
       <p>This is our blog! We write about all things AI, programming, and more!</p>
+
+      <p>
+        Interested in writing for us? Have an idea for an article?
+        <br>
+        Send an email to <strong>siggame@umsystem.edu</strong> for information on how to contribute.
+      </p>
     </div>
 
     <div class="blog-panel">
-      <div class="blog-controls">
+      <div class="blog-controls bg-blue-200">
         <BlogFilter @select="filter.type = $event" />
-        <SearchBar @input="filter.text = $event" />
+        <BlogSearch @input="filter.text = $event" />
       </div>
       <hr>
 
@@ -30,14 +36,21 @@
 
 <script lang="ts">
 import Vue from 'vue';
-import SearchBar from '@/components/SearchBar.vue';
+import BlogSearch from '@/components/BlogSearch.vue';
 import BlogFilter from '@/components/BlogFilter.vue';
 import BlogPreview from '@/components/BlogPreview.vue';
+
+interface Blog {
+  title: string;
+  type: string;
+  publishDate: string;
+  author: string;
+}
 
 export default Vue.extend({
   name: 'Home',
   components: {
-    SearchBar,
+    BlogSearch,
     BlogFilter,
     BlogPreview,
   },
@@ -56,7 +69,7 @@ export default Vue.extend({
         {
           title: 'Epic gaming time', type: 'experience', publishDate: '11/6/2002', author: 'ACM Game',
         },
-      ],
+      ] as Array<Blog>,
       filter: {
         text: '',
         type: 'all',
@@ -64,10 +77,8 @@ export default Vue.extend({
     };
   },
   computed: {
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    filteredBlogs(): Array<any> {
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      return this.blogs.filter((blog: any) => {
+    filteredBlogs(): Array<Blog> {
+      return this.blogs.filter((blog) => {
         if (
           !(blog.title.toLowerCase().includes(this.filter.text)
             || blog.author.toLowerCase().includes(this.filter.text))
@@ -90,20 +101,20 @@ export default Vue.extend({
 #blog-page {
   width: 80%;
   margin: auto;
-
 }
 
 .blog-header {
+  padding: 10px;
 }
 
 .blog-controls {
   display: flex;
   justify-content: space-between;
+  height: 30px;
+  padding: 2px;
 }
 
 .blog-panel hr {
-  border: 2px solid blue;
-  border-radius: 5px;
   margin: 0 0 10px 0;
 }
 
