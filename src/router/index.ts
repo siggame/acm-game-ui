@@ -7,7 +7,10 @@ import { beforeGuard, afterGuard } from './guards';
 // Reduces initial load time for the website by loading pages as-needed
 // Code is sent to the browser in named webpack chunks (example: home.[hash].js)
 const Home = () => import(/* webpackChunkName: "home" */ '../views/Home.vue');
+const Sponsors = () => import(/* webpackChunkName: "sponsors" */ '../views/Sponsors.vue');
 const About = () => import(/* webpackChunkName: "about" */ '../views/About.vue');
+const Hall = () => import(/* webpackChunkName: "hall" */ '../views/Hall.vue');
+const Blog = () => import(/* webpackChunkName: "blog" */ '../views/Blog.vue');
 const Error = () => import(/* webpackChunkName: "error" */ '../views/Error.vue');
 const HallOfFame = () => import(/* webpackChunkName: "hall-of-fame" */ '../views/HallOfFame.vue');
 
@@ -32,11 +35,20 @@ const routes: Array<RouteConfig> = [
     component: About,
   },
   {
-    path: '/error',
-    name: 'Error',
-    component: Error,
+    path: '/sponsors',
+    name: 'Sponsors',
+    component: Sponsors,
   },
-
+  {
+    path: '/hall',
+    name: 'Hall',
+    component: Hall,
+  },
+  {
+    path: '/Blog',
+    name: 'Blog',
+    component: Blog,
+  },
   // This route will match anything which isn't matched above
   {
     path: '*',

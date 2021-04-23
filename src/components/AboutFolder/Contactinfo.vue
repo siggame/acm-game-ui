@@ -1,4 +1,5 @@
 <template>
+
   <div
     id="contact-info"
     class="flex-container"
@@ -100,7 +101,9 @@
 import Vue from 'vue';
 
 export default Vue.extend({
+
   name: 'ContactInfo',
+
 });
 </script>
 
@@ -126,7 +129,6 @@ table tr:nth-child(even) {
 }
 table tr:nth-child(odd) {
   background-color: #ffffff;
-}
 
 .flex-container {
   display: flex;

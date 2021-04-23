@@ -3,6 +3,7 @@
     <Jumbotron />
     <MMAIInfo />
     <h3>Information on Teams</h3>
+
     <testcolumn />
     <DynDesignTeams
       v-for="(team, index) of teams"
@@ -29,10 +30,12 @@
 <script lang="ts">
 import Vue from 'vue';
 import Contactinfo from '@/components/AboutFolder/Contactinfo.vue';
+
 import OpenSourceLinks from '@/components/AboutFolder/OpenSourceLinks.vue';
 import DynDesignTeams from '@/components/AboutFolder/DynDesignTeams.vue';
 import Jumbotron from '@/components/AboutFolder/Jumbotron.vue';
 import MMAIInfo from '@/components/AboutFolder/MMAIInfo.vue';
+
 
 export default Vue.extend({
   name: 'About',
@@ -113,5 +116,4 @@ li {
   padding: 0;
   margin: 0;
 }
-
 </style>

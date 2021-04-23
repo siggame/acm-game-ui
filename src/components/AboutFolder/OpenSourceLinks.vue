@@ -45,6 +45,7 @@ export default Vue.extend({
 });
 </script>
 
+
 <style scoped>
 table,
 th,
