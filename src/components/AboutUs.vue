@@ -1,8 +1,21 @@
 <template>
   <div class="about-us">
-    <h1>What We Do</h1>
-    <p>{{ message }}</p>
-    <p>{{ slogan }}</p>
+    <div class="left-side">
+      <h1>What We Do</h1>
+      <p>
+        ACM Game is an organization all about making games! <br>
+        Each year we host the MMAI hackathon where students can <br>
+        battle each other in a race to see who can make the best <br>
+        AI possible for cash prizes!
+      </p>
+      <p>Here at ACM Game, we code the game.<br> <strong>You</strong> code the player.</p>
+    </div>
+    <div class="right-side">
+      <img
+        src="../assets/homeMMAI.jpg"
+        style="width:450px; padding: 5px"
+      >
+    </div>
   </div>
 </template>
 
@@ -11,12 +24,6 @@ import Vue from 'vue';
 
 export default Vue.extend({
   name: 'AboutUs',
-  data() {
-    return {
-      message: 'ACM Game is an organization all about making games! Each year we host the MMAI hackathon where students can battle each other in a race to see who can make the best AI possible for cash prizes!',
-      slogan: 'Here at ACM Game, we code the game, you code the player.',
-    };
-  },
 });
 </script>
 
@@ -24,16 +31,27 @@ export default Vue.extend({
 
     .about-us {
         background-color: lightgrey;
+        display:flex;
+
+    }
+    .right-side{
+      flex:33%
+    }
+    .left-side{
+      flex:66%
     }
     h1 {
         text-align: left;
         padding: 25px;
         margin: 0px;
+        font-size: 2vw
     }
 
     p {
         text-align: left;
         padding: 25px;
+        font-size: 1.15vw;
         margin: 0px;
+
     }
 </style>

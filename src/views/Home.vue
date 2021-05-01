@@ -20,6 +20,7 @@
     </div>
     <RecentNews />
     <AboutUs />
+    <JoinUs />
   </div>
 </template>
 
@@ -29,6 +30,7 @@ import { getImg } from '@/services/common';
 import TheJumbotron from '@/components/TheJumbotron.vue'; // @ is an alias to /src
 import RecentNews from '@/components/RecentNews.vue';
 import AboutUs from '@/components/AboutUs.vue';
+import JoinUs from '@/components/JoinUs.vue';
 
 export default Vue.extend({
   name: 'Home',
@@ -36,6 +38,7 @@ export default Vue.extend({
     TheJumbotron,
     RecentNews,
     AboutUs,
+    JoinUs,
   },
 
   methods: {
