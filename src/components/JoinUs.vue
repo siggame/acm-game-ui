@@ -9,8 +9,8 @@
           Benefits: <br>
           <ul style="text-align:left; font-size:1.15vw;">
             <li>Friends</li>
-            <li>Expirence</li>
-            <li>Expirmental Learning Credit</li>
+            <li>Experience</li>
+            <li>Experiment Learning Credit</li>
             <li>Real Working Environment</li>
             <li>Connections</li>
             <li>Great For Building Resumes!</li>
