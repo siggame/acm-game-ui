@@ -53,7 +53,7 @@ const routes: Array<RouteConfig> = [
 
 // Create a router with the defined routes
 const router = new VueRouter({
-  mode: 'history',
+  mode: 'hash',
   routes,
 });
 
