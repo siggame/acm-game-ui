@@ -1,39 +1,26 @@
 <template>
   <div id="open-source-links">
-    <h2>We are Open Source!</h2>
-    <table class="css-table">
-      <tr>
-        <th>Game</th>
-        <th>Github Repo</th>
-      </tr>
-      <tr>
-        <th>Example</th>
-        <th>
-          <a
-            href="https://www.google.com"
-            target="_blank"
-          >githubrepo/link</a>
-        </th>
-      </tr>
-      <tr>
-        <th>Example</th>
-        <th>
-          <a
-            href="https://www.google.com"
-            target="_blank"
-          >githubrepo/link</a>
-        </th>
-      </tr>
-      <tr>
-        <th>Example</th>
-        <th>
-          <a
-            href="https://www.google.com"
-            target="_blank"
-          >githubrepo/link</a>
-        </th>
-      </tr>
-    </table>
+    <h2 style="font-size:1.65vw;">
+      We are Open Source!
+    </h2>
+    <hr>
+    <p style="font-size:1.15vw;">
+      In addition to developing novel games for MegaMinerAI, the ACM-Game Development team develops
+      <br>
+      and maintains a framework to host MegaMinerAI and other programming competitions. Though
+      game <br>
+      details are kept secret until competition day, our framework is opensource and available on
+      GitHub. <br><br>
+      As our competition attendance has grown to record levels, the ACM-Game Developers have begun a
+      redesign of the<br>
+      competition framework is open source and available on GitHub. <br><br>
+
+      Our GitHub is: <a
+        href="https://github.com/siggame"
+        target="_blank"
+      >https://github.com/siggame</a>
+    </p>
+    <hr>
   </div>
 </template>
 
@@ -44,7 +31,6 @@ export default Vue.extend({
   name: 'OpenSourceLinks',
 });
 </script>
-
 
 <style scoped>
 table,
