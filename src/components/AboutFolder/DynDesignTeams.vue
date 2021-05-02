@@ -3,7 +3,7 @@
     <div class="solid">
       <img
         :src="getImgUrl()"
-        style="width: 150px; float: left; margin: 20px 12px 12px 14px;"
+        style="width: 175px; float: left; margin: 20px 12px 12px 14px;"
       >
       <h2>{{ teamname }}</h2>
       <p>{{ description }}</p>
