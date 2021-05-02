@@ -67,5 +67,6 @@ div.solid {
   height: 250px;
   background-color: pink;
   margin-left: 15%;
+  margin-bottom: 5px;
 }
 </style>
