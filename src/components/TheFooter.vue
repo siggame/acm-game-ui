@@ -28,6 +28,7 @@
         :key="link.name"
         class="gray-500"
         :href="link.url"
+        target="_blank"
       >
         <p>{{ link.name }}</p>
       </a>
@@ -100,5 +101,7 @@ p {
 
 a:hover {
   color: #00a1ee;
+  cursor: pointer;
+  transition: color .3s;
 }
 </style>

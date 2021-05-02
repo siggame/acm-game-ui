@@ -1,6 +1,13 @@
 <template>
   <div class="HallOfFame">
-    <h1>Important People</h1>
+    <h1 style="font-size:2vw;">
+      Important People
+    </h1>
+    <p style="font-size:1.15vw;">
+      Thank you so much for all of your hard work for this
+      organization.<br> We wish you all the best in your professional life.
+    </p>
+
     <hr style="height:2px;border-width:0;color:blue;background-color:blue">
     <HOFBlock
       v-for="(person, index) of people"
