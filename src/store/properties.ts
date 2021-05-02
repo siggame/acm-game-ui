@@ -36,19 +36,7 @@ export const mutations: MutationTree<State> = {
 };
 
 // Actions are miscellaneous methods that can be async
-export const actions: ActionTree<State, State> = {
-  async verifyUser(store) {
-    try {
-      // TODO - real use verification
-      store.commit('updateUser', { username: 'FakeUser' });
-    } catch (err) {
-      store.commit(
-        'updateError',
-        `Failed to retrieve user info for the current user. ${err}`,
-      );
-    }
-  },
-};
+export const actions: ActionTree<State, State> = {};
 
 // Modules allow us to break up our store if it gets too bloated
 export const modules: ModuleTree<State> = {};
