@@ -1,10 +1,10 @@
 <template>
   <div id="mmai-info">
-    <h2 style="padding: 5px; text-align:left;">
+    <h2 style="padding: 9px; text-align:left; font-size: 1.65vw">
       MegaMinerAI Info
     </h2>
     <hr class="divide">
-    <p style="text-align: left; padding: 7px;">
+    <p style="text-align: left; padding: 9px; font-size: 1.15vw;">
       <img
         style="float: right; margin: 0px 0px 20px 20px;"
         src="../../assets/about/mmaiphoto.jpg"
@@ -17,9 +17,9 @@
       development team. The details of the game are kept secret until the day of
       competition, so competitors must <br>
       demonstrate their wits and coding skills to develop the best AI! Programs
-      are pitted against one another in ACM-Game’s Arena, where thousands of
+      are pitted against one another in ACM-Game’s <br>Arena, where thousands of
       games are played in the cloud. Game results are available to users, so
-      that they may further debug their <br>
+      that they may further <br>debug their
       code and refine their strategy. After the competition ends, a
       triple-elimination is run to determine the winners. <br>
       The top three student teams are awarded prize money and crowned as the

@@ -10,7 +10,6 @@ const Home = () => import(/* webpackChunkName: "home" */ '../views/Home.vue');
 const Sponsors = () => import(/* webpackChunkName: "sponsors" */ '../views/Sponsors.vue');
 const About = () => import(/* webpackChunkName: "about" */ '../views/About.vue');
 const Hall = () => import(/* webpackChunkName: "hall" */ '../views/Hall.vue');
-const Blog = () => import(/* webpackChunkName: "blog" */ '../views/Blog.vue');
 const Error = () => import(/* webpackChunkName: "error" */ '../views/Error.vue');
 
 // Apply a VueRouter to our Vue instance
@@ -41,7 +40,9 @@ const routes: Array<RouteConfig> = [
   {
     path: '/Blog',
     name: 'Blog',
-    component: Blog,
+    beforeEnter: (_to: Route, _from: Route, next: Function) => {
+      window.location.href = 'https://medium.com/siggame';
+    },
   },
   // This route will match anything which isn't matched above
   {

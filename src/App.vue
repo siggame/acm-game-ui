@@ -1,8 +1,8 @@
 <template>
   <div id="app">
     <TheNavigator />
-    <LoadIcon v-if="isLoading" />
-    <router-view v-else />
+    <PageLoader v-if="isLoading" />
+    <router-view />
     <TheFooter />
   </div>
 </template>
@@ -11,7 +11,7 @@
 import Vue from 'vue';
 import { mapState } from 'vuex';
 import TheNavigator from '@/components/TheNavigator.vue';
-import LoadIcon from '@/components/LoadIcon.vue';
+import PageLoader from '@/components/PageLoader.vue';
 import TheFooter from '@/components/TheFooter.vue';
 import { State } from './store/types';
 
@@ -19,7 +19,7 @@ export default Vue.extend({
   name: 'App',
   components: {
     TheNavigator,
-    LoadIcon,
+    PageLoader,
     TheFooter,
   },
   computed: {
