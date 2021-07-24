@@ -1,10 +1,16 @@
 <template>
   <div class="about">
-    <Jumbotron />
+    <GenericJumbotron
+      image="games.gif"
+      style="height: 500px; width: 100%;"
+    >
+      <div style="height: 100%; width: 100%">
+        Hello
+      </div>
+    </GenericJumbotron>
     <MMAIInfo />
     <h3>Information on Teams</h3>
 
-    <testcolumn />
     <DynDesignTeams
       v-for="(team, index) of teams"
       :key="index"
@@ -30,19 +36,18 @@
 <script lang="ts">
 import Vue from 'vue';
 import Contactinfo from '@/components/AboutFolder/Contactinfo.vue';
-
+import GenericJumbotron from '@/components/GenericJumbotron.vue';
 import OpenSourceLinks from '@/components/AboutFolder/OpenSourceLinks.vue';
 import DynDesignTeams from '@/components/AboutFolder/DynDesignTeams.vue';
-import Jumbotron from '@/components/AboutFolder/Jumbotron.vue';
 import MMAIInfo from '@/components/AboutFolder/MMAIInfo.vue';
 
 export default Vue.extend({
-  name: 'About',
+  name: 'AboutPage',
   components: {
     MMAIInfo,
     Contactinfo,
     OpenSourceLinks,
-    Jumbotron,
+    GenericJumbotron,
     DynDesignTeams,
   },
   data() {
