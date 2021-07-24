@@ -4,8 +4,9 @@
       image="games.gif"
       style="height: 500px; width: 100%;"
     >
-      <div style="height: 100%; width: 100%">
-        Hello
+      <div class="about-header">
+        <img src="images/wrench.svg">
+        <h1>WHO WE ARE</h1>
       </div>
     </GenericJumbotron>
     <MMAIInfo />
@@ -105,9 +106,27 @@ export default Vue.extend({
 </script>
 
 <style scoped>
-h2 {
-  text-align: left;
+.about-header {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.4);
 }
+
+.about-header img {
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.about-header h1 {
+  font-size: 48px;
+  color: black;
+  position: absolute;
+}
+
 li {
   list-style: none;
 }
