@@ -1,7 +1,7 @@
 <template>
   <div
     class="jumbotron"
-    :style="{ 'background-image': `url(images/${image})` }"
+    :style="{ 'background-image': `url(images/${image})`, 'background-attachment': attachment }"
   >
     <slot />
   </div>
@@ -17,6 +17,14 @@ export default {
       type: String,
       required: true,
     },
+    attachment: {
+      type: String,
+      default: 'scroll',
+      validator(value) {
+        // The value must match one of these strings
+        return ['fixed', 'scroll'].indexOf(value) !== -1;
+      },
+    },
   },
   methods: {
     getImg,
@@ -31,6 +39,5 @@ export default {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
 }
 </style>
