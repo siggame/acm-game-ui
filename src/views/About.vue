@@ -1,10 +1,21 @@
 <template>
   <div class="about">
-    <Jumbotron />
+    <GenericJumbotron
+      image="games.gif"
+      attachment="fixed"
+      style="height: 500px; width: 100%;"
+    >
+      <div class="about-header">
+        <div class="header-container">
+          <h1>
+            WHO WE ARE
+          </h1>
+        </div>
+      </div>
+    </GenericJumbotron>
     <MMAIInfo />
     <h3>Information on Teams</h3>
 
-    <testcolumn />
     <DynDesignTeams
       v-for="(team, index) of teams"
       :key="index"
@@ -30,19 +41,18 @@
 <script lang="ts">
 import Vue from 'vue';
 import Contactinfo from '@/components/AboutFolder/Contactinfo.vue';
-
+import GenericJumbotron from '@/components/GenericJumbotron.vue';
 import OpenSourceLinks from '@/components/AboutFolder/OpenSourceLinks.vue';
 import DynDesignTeams from '@/components/AboutFolder/DynDesignTeams.vue';
-import Jumbotron from '@/components/AboutFolder/Jumbotron.vue';
 import MMAIInfo from '@/components/AboutFolder/MMAIInfo.vue';
 
 export default Vue.extend({
-  name: 'About',
+  name: 'AboutPage',
   components: {
     MMAIInfo,
     Contactinfo,
     OpenSourceLinks,
-    Jumbotron,
+    GenericJumbotron,
     DynDesignTeams,
   },
   data() {
@@ -100,9 +110,42 @@ export default Vue.extend({
 </script>
 
 <style scoped>
-h2 {
-  text-align: left;
+.about-header {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.4);
 }
+
+.header-container {
+  height: 100%;
+  width: 100%;
+}
+
+.header-container::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-image: url('../assets/wrench.svg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 20%;
+  opacity: 25%;
+}
+
+.header-container h1 {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 64px;
+  color: black;
+  margin: 0;
+}
+
 li {
   list-style: none;
 }
