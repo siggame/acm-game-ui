@@ -30,7 +30,7 @@ export default Vue.extend({
 <style scoped>
 
     .about-us {
-        background-color: lightgrey;
+        background-color: white;
         display:flex;
 
     }
