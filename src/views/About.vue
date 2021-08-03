@@ -39,14 +39,31 @@
       />
     </div>
 
-    <div class="flex-container">
-      <OpenSourceLinks />
+    <div class="about-text">
+      <h2>OPEN SOURCE</h2>
+      <p>
+        In addition to developing novel games for MegaMinerAI, the ACM-Game Development
+        team develops and maintains a framework to host MegaMinerAI and other programming
+        competitions. Though game details are kept secret until competition day, our framework
+        is opensource and available on GitHub. As our competition attendance has grown to record
+        levels, the ACM-Game Developers have begun a redesign of the competition framework is
+        open source and available on <a
+          href="https://github.com/siggame"
+          target="_blank"
+        >our GitHub</a>.
+      </p>
     </div>
-    <ul class="flex-container">
-      <li class="flex-item">
-        <Contactinfo />
-      </li>
-    </ul>
+
+    <div>
+      <h2>CONTACT US</h2>
+      <div class="contact-list">
+        <ContactLink
+          v-for="(contact, index) of contacts"
+          :key="index"
+          :contact="contact"
+        />
+      </div>
+    </div>
   </div>
 </template>
 
@@ -54,16 +71,14 @@
 import Vue from 'vue';
 import GenericJumbotron from '@/components/GenericJumbotron.vue';
 import TeamBlock from '@/components/TeamBlock.vue';
-import Contactinfo from '@/components/AboutFolder/Contactinfo.vue';
-import OpenSourceLinks from '@/components/AboutFolder/OpenSourceLinks.vue';
+import ContactLink from '@/components/ContactLink.vue';
 
 export default Vue.extend({
   name: 'AboutPage',
   components: {
     GenericJumbotron,
     TeamBlock,
-    Contactinfo,
-    OpenSourceLinks,
+    ContactLink,
   },
   data() {
     return {
@@ -97,6 +112,58 @@ export default Vue.extend({
           logo: 'web.png',
           image: 'web.png',
           description: 'This group runs the main website (like the one you are on now) as well as the MMAI one. They are responsible for designing the website, programming it, upkeeping the website, etc. This team gets experience in:',
+        },
+      ],
+      contacts: [
+        {
+          name: 'ACM Game',
+          role: 'Organization',
+          email: 'siggame@gmail.com',
+        },
+        {
+          name: 'Drew Brissette',
+          role: 'Chair',
+          email: 'adb5cw@umsystem.edu',
+        },
+        {
+          name: 'Jonathan Henderson',
+          role: 'Vice Chair, Arena Lead',
+          email: 'jkhd67@umsystem.edu',
+        },
+        {
+          name: 'Dr. Angel Morales',
+          role: 'Faculty Advisor',
+          email: 'ricardom@umsystem.edu',
+        },
+        {
+          name: 'Matt Barton',
+          role: 'Game Lead',
+          email: 'mbzzd@umsystem.edu',
+        },
+        {
+          name: 'Bryce Foster',
+          role: 'PR Lead',
+          email: 'bnfghq@umsystem.edu',
+        },
+        {
+          name: 'Jordan Styer',
+          role: 'Secretary',
+          email: 'jbsxqg@umsystem.edu',
+        },
+        {
+          name: 'Leo Flaker',
+          role: 'Visualizer Lead I',
+          email: 'lafcz3@umsystem.edu',
+        },
+        {
+          name: 'Anthony Truong',
+          role: 'Visualizer Lead II',
+          email: 'atrm3@umsystem.edu',
+        },
+        {
+          name: 'Nicholas Latinette',
+          role: 'Web Lead',
+          email: 'nalrnw@umsystem.edu',
         },
       ],
     };
@@ -146,16 +213,14 @@ export default Vue.extend({
   margin: auto;
 }
 
-li {
-  list-style: none;
-}
-.flex-container {
+.contact-list {
   display: flex;
-
-  flex-flow: row wrap;
-  justify-content: center;
-
-  padding: 0;
-  margin: 0;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
+
+.contact-list div {
+  margin: 20px;
+}
+
 </style>
