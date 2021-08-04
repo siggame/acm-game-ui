@@ -134,6 +134,7 @@ export default Vue.extend({
           role: 'Vice Chair, Arena Lead',
           socials: {
             email: 'jkhd67@umsystem.edu',
+            linkedin: 'https://www.linkedin.com/in/jonathan-henderson-804384171',
           },
         },
         {

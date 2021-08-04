@@ -11,10 +11,7 @@
           :href="transformSocialLink(site, link)"
           target="_blank"
         >
-          <img
-            :src="getImg(`social/${site}.svg`)"
-          >
-          <!-- </a> -->
+          <img :src="getImg(`social/${site}.svg`)">
         </a>
       </div>
     </div>

@@ -17,7 +17,7 @@ export function transformSocialLink(site: string, link: string): string {
       return `mailto:${link}`;
     }
     default: {
-      return 'http://';
+      return link;
     }
   }
 }
