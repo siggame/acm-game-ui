@@ -134,7 +134,10 @@ export default Vue.extend({
           role: 'Vice Chair, Arena Lead',
           socials: {
             email: 'jkhd67@umsystem.edu',
-            linkedin: 'https://www.linkedin.com/in/jonathan-henderson-804384171',
+            github: 'Jawbone999',
+            linkedin: 'jonathanhenderson999',
+            steam: 'id/TheJaw',
+            website: 'https://jawbone999.github.io',
           },
         },
         {

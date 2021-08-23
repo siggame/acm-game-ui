@@ -6,12 +6,12 @@
       <p>{{ contact.role }}</p>
       <div class="contact-icons">
         <a
-          v-for="(link, site) of contact.socials"
+          v-for="site of orderedSocials"
           :key="site"
-          :href="transformSocialLink(site, link)"
+          :href="transformSocialLink(site, contact.socials[site])"
           target="_blank"
         >
-          <img :src="getImg(`social/${site}.svg`)">
+          <img :src="getImg(`social_logos/${site}.svg`)">
         </a>
       </div>
     </div>
@@ -20,7 +20,7 @@
 
 <script lang="ts">
 import Vue from 'vue';
-import { getImg, transformSocialLink } from '@/services/common';
+import { getImg, transformSocialLink, VALID_SOCIALS } from '@/services/common';
 
 export default Vue.extend({
   name: 'ContactInfo',
@@ -30,11 +30,18 @@ export default Vue.extend({
       required: true,
     },
   },
+  computed: {
+    orderedSocials() {
+      return Object.keys(this.contact.socials)
+        .sort()
+        .filter((site: string) => VALID_SOCIALS.indexOf(site) > -1)
+        .slice(0, 5);
+    },
+  },
   methods: {
     getImg,
     transformSocialLink,
   },
-
 });
 </script>
 
