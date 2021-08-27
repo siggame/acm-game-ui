@@ -1,5 +1,5 @@
 <template>
-  <div class="HallOfFame">
+  <div id="HallPage">
     <h1 style="font-size:2vw;">
       Important People
     </h1>
@@ -9,43 +9,44 @@
     </p>
 
     <hr style="height:2px;border-width:0;color:blue;background-color:blue">
-    <HOFBlock
+    <HallBlock
       v-for="(person, index) of people"
       :key="index"
-      :photo="person.photo"
-      :name="person.name"
-      :contribution="person.contribution"
-      :link="person.link"
+      :person="person"
     />
   </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue';
-import HOFBlock from '@/components/HOFBlock.vue';
+import HallBlock from '@/components/HallBlock.vue';
 
 export default Vue.extend({
-  name: 'Hall',
+  name: 'HallPage',
   components: {
-    HOFBlock,
+    HallBlock,
   },
   data() {
     return {
       people: [
         {
           name: 'Jacob Fischer',
-          photo: 'fisheranimal.jpg',
-          contribution: 'Creer',
-          link: 'google.com',
-        },
-        {
-          name: 'Blakob Fisher',
-          photo: 'fisheranimal2.jpg',
-          contribution: 'Creer2',
-          link: 'https://www.google.com',
+          photo: 'jacob_fischer.png',
+          contributions: ['Creer'],
+          socials: {
+            website: 'jacob.t.fischer@gmail.com',
+            email: 'https://www.jacobfischer.me',
+          },
+          about: 'Jacob Fischer has created the bedrock upon which ACM Game exists today.',
         },
       ],
     };
   },
 });
 </script>
+
+<style scoped>
+#hall-page {
+
+}
+</style>

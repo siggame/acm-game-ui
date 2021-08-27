@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div id="home-page">
     <HomeHeader />
     <RecentNews />
     <AboutUs />
@@ -10,16 +10,14 @@
 <script lang="ts">
 import Vue from 'vue';
 import { getImg } from '@/services/common';
-import TheJumbotron from '@/components/TheJumbotron.vue'; // @ is an alias to /src
 import RecentNews from '@/components/RecentNews.vue';
 import AboutUs from '@/components/AboutUs.vue';
 import JoinUs from '@/components/JoinUs.vue';
-import HomeHeader from '@/components/HomeHeader.vue'
+import HomeHeader from '@/components/HomeHeader.vue';
 
 export default Vue.extend({
-  name: 'Home',
+  name: 'HomePage',
   components: {
-    TheJumbotron,
     RecentNews,
     AboutUs,
     JoinUs,
@@ -33,5 +31,7 @@ export default Vue.extend({
 </script>
 
 <style scoped>
+#home-page {
 
+}
 </style>

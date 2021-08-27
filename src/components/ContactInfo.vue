@@ -4,43 +4,32 @@
     <div class="info-content">
       <h3>{{ contact.name }}</h3>
       <p>{{ contact.role }}</p>
-      <div class="contact-icons">
-        <a
-          v-for="site of orderedSocials"
-          :key="site"
-          :href="transformSocialLink(site, contact.socials[site])"
-          target="_blank"
-        >
-          <img :src="getImg(`social_logos/${site}.svg`)">
-        </a>
-      </div>
+      <SocialLinks
+        :socials="contact.socials"
+        :count="5"
+      />
     </div>
   </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue';
-import { getImg, transformSocialLink, VALID_SOCIALS } from '@/services/common';
+import { getImg } from '@/services/common';
+import SocialLinks from '@/components/SocialLinks.vue';
 
 export default Vue.extend({
   name: 'ContactInfo',
+  components: {
+    SocialLinks,
+  },
   props: {
     contact: {
       type: Object,
       required: true,
     },
   },
-  computed: {
-    orderedSocials() {
-      return Object.keys(this.contact.socials)
-        .sort()
-        .filter((site: string) => VALID_SOCIALS.indexOf(site) > -1)
-        .slice(0, 5);
-    },
-  },
   methods: {
     getImg,
-    transformSocialLink,
   },
 });
 </script>
@@ -65,16 +54,5 @@ export default Vue.extend({
 .info-content h3,
 .info-content p {
   margin: 0;
-}
-
-.contact-icons {
-  display: flex;
-  justify-content: flex-start;
-}
-
-.contact-icons a {
-  height: 30px;
-  width: 30px;
-  margin: 0 10px;
 }
 </style>

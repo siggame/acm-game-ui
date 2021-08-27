@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="error-page">
     <p>Error!</p>
   </div>
 </template>
@@ -8,6 +8,12 @@
 import Vue from 'vue';
 
 export default Vue.extend({
-  name: 'Error',
+  name: 'ErrorPage',
 });
 </script>
+
+<style scoped>
+#error-page {
+
+}
+</style>

@@ -1,5 +1,5 @@
 <template>
-  <div class="about">
+  <div id="about-page">
     <GenericJumbotron
       image="games.gif"
       attachment="fixed"
@@ -196,6 +196,10 @@ export default Vue.extend({
 </script>
 
 <style scoped>
+#about-page {
+
+}
+
 .about-header {
   position: relative;
   height: 100%;
