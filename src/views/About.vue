@@ -237,6 +237,11 @@ export default Vue.extend({
   margin: auto;
 }
 
+.about-text p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
 .contact-list {
   display: flex;
   justify-content: space-evenly;
