@@ -57,7 +57,7 @@
     <div>
       <h2>CONTACT US</h2>
       <div class="contact-list">
-        <ContactLink
+        <ContactInfo
           v-for="(contact, index) of contacts"
           :key="index"
           :contact="contact"
@@ -71,14 +71,14 @@
 import Vue from 'vue';
 import GenericJumbotron from '@/components/GenericJumbotron.vue';
 import TeamBlock from '@/components/TeamBlock.vue';
-import ContactLink from '@/components/ContactLink.vue';
+import ContactInfo from '@/components/ContactInfo.vue';
 
 export default Vue.extend({
   name: 'AboutPage',
   components: {
     GenericJumbotron,
     TeamBlock,
-    ContactLink,
+    ContactInfo,
   },
   data() {
     return {
@@ -118,52 +118,76 @@ export default Vue.extend({
         {
           name: 'ACM Game',
           role: 'Organization',
-          email: 'siggame@gmail.com',
+          socials: {
+            email: 'siggame@gmail.com',
+          },
         },
         {
           name: 'Drew Brissette',
           role: 'Chair',
-          email: 'adb5cw@umsystem.edu',
+          socials: {
+            email: 'adb5cw@umsystem.edu',
+          },
         },
         {
           name: 'Jonathan Henderson',
           role: 'Vice Chair, Arena Lead',
-          email: 'jkhd67@umsystem.edu',
+          socials: {
+            email: 'jkhd67@umsystem.edu',
+            github: 'Jawbone999',
+            linkedin: 'jonathanhenderson999',
+            steam: 'id/TheJaw',
+            website: 'https://jawbone999.github.io',
+          },
         },
         {
           name: 'Dr. Angel Morales',
           role: 'Faculty Advisor',
-          email: 'ricardom@umsystem.edu',
+          socials: {
+            email: 'ricardom@umsystem.edu',
+          },
         },
         {
           name: 'Matt Barton',
           role: 'Game Lead',
-          email: 'mbzzd@umsystem.edu',
+          socials: {
+            email: 'mbzzd@umsystem.edu',
+          },
         },
         {
           name: 'Bryce Foster',
           role: 'PR Lead',
-          email: 'bnfghq@umsystem.edu',
+          socials: {
+            email: 'bnfghq@umsystem.edu',
+          },
         },
         {
           name: 'Jordan Styer',
           role: 'Secretary',
-          email: 'jbsxqg@umsystem.edu',
+          socials: {
+            email: 'jbsxqg@umsystem.edu',
+          },
         },
         {
           name: 'Leo Flaker',
           role: 'Visualizer Lead I',
-          email: 'lafcz3@umsystem.edu',
+          socials: {
+            email: 'lafcz3@umsystem.edu',
+          },
         },
         {
           name: 'Anthony Truong',
           role: 'Visualizer Lead II',
-          email: 'atrm3@umsystem.edu',
+          socials: {
+            email: 'atrm3@umsystem.edu',
+          },
         },
         {
           name: 'Nicholas Latinette',
           role: 'Web Lead',
-          email: 'nalrnw@umsystem.edu',
+          socials: {
+            email: 'nalrnw@umsystem.edu',
+          },
         },
       ],
     };
