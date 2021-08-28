@@ -1,19 +1,22 @@
 <template>
   <div id="HallPage">
-    <h1 style="font-size:2vw;">
+    <h1>
       Important People
     </h1>
-    <p style="font-size:1.15vw;">
-      Thank you so much for all of your hard work for this
-      organization.<br> We wish you all the best in your professional life.
+    <p>
+      Thank you so much for all of your hard work for this organization.
+      <br>
+      We wish you all the best in your professional lives.
     </p>
 
-    <hr style="height:2px;border-width:0;color:blue;background-color:blue">
-    <HallBlock
-      v-for="(person, index) of people"
-      :key="index"
-      :person="person"
-    />
+    <div class="celebrity-list">
+      <HallBlock
+        v-for="(person, index) of people"
+        :key="index"
+        :person="person"
+        :index="index"
+      />
+    </div>
   </div>
 </template>
 
@@ -32,12 +35,22 @@ export default Vue.extend({
         {
           name: 'Jacob Fischer',
           photo: 'jacob_fischer.png',
-          contributions: ['Creer'],
           socials: {
-            website: 'jacob.t.fischer@gmail.com',
-            email: 'https://www.jacobfischer.me',
+            email: 'jacob.t.fischer@gmail.com',
+            github: 'JacobFischer',
+            website: 'https://resume.jacobfischer.me/',
           },
-          about: 'Jacob Fischer has created the bedrock upon which ACM Game exists today.',
+          about: "Jacob Fischer is the architect of the majority of ACM Game's modern framework.",
+        },
+        {
+          name: 'Jacob Fischer',
+          photo: 'jacob_fischer.png',
+          socials: {
+            email: 'jacob.t.fischer@gmail.com',
+            github: 'JacobFischer',
+            website: 'https://resume.jacobfischer.me/',
+          },
+          about: "Jacob Fischer is the architect of the majority of ACM Game's modern framework.",
         },
       ],
     };
@@ -48,5 +61,9 @@ export default Vue.extend({
 <style scoped>
 #hall-page {
 
+}
+
+.celebrity-list div {
+  margin: 20px auto;
 }
 </style>

@@ -1,18 +1,16 @@
 <template>
-  <div class="hall-block">
-    <div class="solid">
-      <img
-        :src="getImg(`people/${person.photo}`)"
-        style="float: left; margin 0px 12px 12px 0px; width: 280px; height: 213px; padding: 5px"
-      >
-      <div style="padding: 20px;">
-        <h2>{{ person.name }}</h2>
-        <p>{{ person.about }}</p>
-        <SocialLinks
-          :socials="person.socials"
-          :count="10"
-        />
-      </div>
+  <div
+    class="hall-block"
+    :class="{ 'odd-block': index % 2 !== 0 }"
+  >
+    <img :src="getImg(`people/${person.photo}`)">
+    <div>
+      <h2>{{ person.name }}</h2>
+      <p>{{ person.about }}</p>
+      <SocialLinks
+        :socials="person.socials"
+        :count="10"
+      />
     </div>
   </div>
 </template>
@@ -32,6 +30,10 @@ export default Vue.extend({
       type: Object,
       required: true,
     },
+    index: {
+      type: Number,
+      required: true,
+    },
   },
   methods: {
     getImg,
@@ -41,15 +43,25 @@ export default Vue.extend({
 
 <style scoped>
 .hall-block {
-
+  width: 1000px;
+  height: 220px;
+  display: flex;
+  margin: auto;
+  background-color: rosybrown;
+  box-sizing: border-box;
+  border: 2px solid brown;
 }
 
-.solid {
-  border-style: solid;
+.odd-block {
+  flex-direction: row-reverse;
+}
+
+img {
+  height: 100%;
+  width: 30%;
+}
+
+.hall-block div {
   width: 70%;
-  height: 220px;
-  background-color: pink;
-  margin-left: 15%;
-  margin-bottom: 5px;
 }
 </style>
